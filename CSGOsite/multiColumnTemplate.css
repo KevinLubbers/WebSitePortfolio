@@ -8,6 +8,7 @@
 	padding-left: 0px;
 	padding-top: 0px;
 	padding-right: 0px;
+	border-radius: 15px 15px 0px 0px;
 	padding-bottom: 0px;
 }
 .row {
@@ -20,7 +21,8 @@
 	padding-right: 0px;
 	padding-bottom: 0px;
 	padding-left: 0px;
-	display: inline-block
+	display: inline-block;
+	color: #f6f6f6;
 }
 .row.blockDisplay {
 	display: block;
@@ -56,15 +58,16 @@
 	color: #47464d;
 }
 .primary_header {
+	display:inline-block;
 	width: 100%;
 	background-color: #3a476a;
 	padding-top: 20px;
 	padding-bottom: 10px;
-	clear: both;
 	border-bottom: 2px solid #ffbd6c;
-	background-image: url("images/csgo-banner_opt.png");
+	/*background-image: url("images/csgo-banner_opt.png");
 	background-repeat: no-repeat;
-	background-position: center left;
+	background-position: center left;*/
+	border-radius: 15px 15px 0px 0px;
 }
 .secondary_header {
 	width: 100%;
@@ -170,11 +173,13 @@
 .footer {
 	background-color: #3a476a;
 }
-.title {
+#title {
+	display:inline-block;
 	font-weight: bold;
 	font-style: normal;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	text-align: right;
+	width:48%;
 	color: #FFFFFF;
 	letter-spacing: 2px;
 	padding-right: 2%;
@@ -476,4 +481,13 @@ body {
 
 header {
 	margin-top:2%;
+}
+
+#logo {
+	float:left;
+	height:100px;
+	width:50%;
+	background-image: url("images/csgo-banner_opt.png");
+	background-repeat: no-repeat;
+	background-position: center left;
 }
