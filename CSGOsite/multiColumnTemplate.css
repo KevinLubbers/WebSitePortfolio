@@ -64,9 +64,6 @@
 	padding-top: 20px;
 	padding-bottom: 10px;
 	border-bottom: 2px solid #ffbd6c;
-	/*background-image: url("images/csgo-banner_opt.png");
-	background-repeat: no-repeat;
-	background-position: center left;*/
 	border-radius: 15px 15px 0px 0px;
 }
 .secondary_header {
@@ -173,17 +170,7 @@
 .footer {
 	background-color: #3a476a;
 }
-#title {
-	display:inline-block;
-	font-weight: bold;
-	font-style: normal;
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-	text-align: right;
-	width:48%;
-	color: #FFFFFF;
-	letter-spacing: 2px;
-	padding-right: 2%;
-}
+
 .placeholder {
 	/* [disabled]max-width: 400px;
 */
@@ -233,6 +220,25 @@ body {
 	background-color: #000123;
 }
 
+.title {
+	font-weight: bold;
+	font-style: normal;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	text-align: center;
+	width:100%;
+	color: #FFFFFF;
+	padding-left:10px;
+}
+
+.logo {
+	height:50px;
+	width:100%;
+	background-image: url("images/csgo-banner_opt_mobile.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+/*starts media queries*/
 @media (max-width: 320px) {
 .secondary_header ul li {
 	float: none;
@@ -434,7 +440,41 @@ body {
 }
 
 @media (min-width: 1001px) {
+.stickyMenu {
+	position:fixed;
+	top:0px;
+	width:90%;
+	height:1.5%;
+	margin-left: auto;
+	margin-right: auto;
 }
+	
+.stickMenu + section {
+	padding-top:60px;	
+}
+
+
+
+.title {
+	display: inline-block;
+	width: 25%;
+	letter-spacing: 2px;
+	text-align: right;
+	
+}
+
+.logo {
+	float:left;
+	height:100px;
+	width:65%;
+	
+	background-image: url("images/csgo-banner_opt_desktop.png");
+	background-repeat: no-repeat;
+	background-position: center left;
+}	
+	
+}
+/*ends media queries*/
 .thumbnail {
 	width: 100px;
 	border-radius: 200px;
@@ -468,26 +508,12 @@ body {
 }
 #menu {
 	background-color: #414141;
+	clear:right;
 	
-}
-
-.stickyMenu {
-	position:fixed;
-	top:0px;
-	width:90%;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 header {
 	margin-top:2%;
 }
 
-#logo {
-	float:left;
-	height:100px;
-	width:50%;
-	background-image: url("images/csgo-banner_opt.png");
-	background-repeat: no-repeat;
-	background-position: center left;
-}
+

@@ -5,7 +5,7 @@ window.onscroll = function() {stickyNav()};
 
 function stickyNav() {
 	var navBar = document.getElementById("menu");
-	var navOffSet = navBar.offsetTop;
+	var navOffSet = navBar.offsetHeight;
 	
 	
 	if (window.matchMedia("(max-width: 950px)").matches){
@@ -13,7 +13,7 @@ function stickyNav() {
 	}
 	else{
 		
-		if (window.pageYOffset > navOffSet){
+		if (window.pageYOffset >= navOffSet){
 			navBar.classList.add("stickyMenu");
 		}
 		else {
