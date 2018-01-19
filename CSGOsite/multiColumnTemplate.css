@@ -58,19 +58,20 @@
 .primary_header {
 	width: 100%;
 	background-color: #3a476a;
-	padding-top: 10px;
+	padding-top: 20px;
 	padding-bottom: 10px;
-	clear: left;
+	clear: both;
 	border-bottom: 2px solid #ffbd6c;
 	background-image: url("images/csgo-banner_opt.png");
-	background-repeat:no-repeat;
+	background-repeat: no-repeat;
+	background-position: center left;
 }
 .secondary_header {
 	width: 100%;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	background-color: #B3B3B3;
-	clear: left;
+	clear: none;
 }
 .container .secondary_header ul {
 	margin-top: 0%;
@@ -467,5 +468,12 @@ body {
 
 .stickyMenu {
 	position:fixed;
-	top:0;
+	top:0px;
+	width:90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	margin-top:2%;
 }
